@@ -1,0 +1,93 @@
+body{
+text-align: center;
+margin: auto;
+
+}
+
+.row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0 30px;
+}
+
+
+.one{
+  text-align: left;
+  margin: 0;
+  height: 600px;
+  width: 400px;
+  background-color: #e38524;
+  border-radius: 20px 0 0 20px;
+
+}
+
+.two{
+  height: 600px;
+  width: 400px;
+  background-color: #006872;
+  text-align: left;
+  margin: 0;
+}
+
+.three{
+  height: 600px;
+  width: 400px;
+  text-align: left;
+  margin: 0;
+  background-color: #01413f;
+  border-radius: 0 20px 20px 0;
+}
+
+
+h1{
+  margin-top: 50px;
+  color: white;
+  margin-bottom: 30px;
+  text-align: left;
+  margin-left: 15%;
+  font-family: 'Anton', sans-serif;
+  font-weight: lighter;
+}
+
+p{
+  text-align: left;
+  width: 60%;
+  margin-left: 15%;
+  line-height: 30px;
+  color: white;
+  margin-bottom: 100px;
+}
+
+.btn{
+  text-align: center;
+  width: 150px;
+  height: 50px;
+  font-size: 18px;
+  margin-left: 15%;
+  margin-bottom: 50px;
+
+}
+
+img{
+  margin-top: 50px;
+  margin-left: 15%;
+}
+
+@media (max-width: 1276px){
+  .row {
+    flex-direction: column;
+    max-width: 400px;
+    margin: 40px auto;
+    height: auto;
+  }
+
+  .one{
+    border-radius: 10px 10px 0 0;
+  }
+
+  .three{
+    border-radius: 0 0 10px 10px;
+  }
+}
