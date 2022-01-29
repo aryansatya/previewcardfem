@@ -75,6 +75,14 @@ img{
   margin-left: 15%;
 }
 
+.attribution{
+  font-size: 11px; text-align: center;
+}
+
+.attribution a{
+  color: hsl(228, 45%, 44%);
+}
+
 @media (max-width: 1276px){
   .row {
     flex-direction: column;
