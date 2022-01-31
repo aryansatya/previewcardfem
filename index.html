@@ -1,45 +1,216 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Frontend Mentor | 3-column preview card component</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/master.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>Bio-site</title>
+
+  <!-- css script -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+  <!-- bootstrap scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/0b31354659.js" crossorigin="anonymous"></script>
+
 </head>
+
 <body>
-<div class="row">
-<div class="one col-lg-3 col-md-3 col-sm-4 col-xs-12">
-  <img src="images/icon-sedans.svg" alt="">
-  <h1>SEDANS</h1>
-  <p>Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city
-  or on your next road trip.</p>
-  <button type="button" class="btn btn-outline-light rounded-pill">Learn More</button>
-</div>
 
-<div class="two col-lg-3 col-md-3 col-sm-4 col-xs-12">
-  <img src="images/icon-suvs.svg" alt="">
-  <h1>SUVS</h1>
-  <p>Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation
-  and off-road adventures.</p>
-  <button type="button" class="btn btn-outline-light rounded-pill">Learn More</button>
-</div>
+  <section class="colored-section" id="title">
 
-<div class="three col-lg-3 col-md-3 col-sm-4 col-xs-12">
-  <img src="images/icon-luxury.svg" alt="">
-  <h1>LUXURY</h1>
-  <p>Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury
-  rental and arrive in style.</p>
-  <button type="button" class="btn btn-outline-light rounded-pill">Learn More</button>
-</div>
-</div>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="https://www.frontendmentor.io/profile/aryansatya">Aryan Satya</a>.
+    <div class="container-fluid">
+
+
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="">Aryan Satya</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="false" aria-aria-label="Toggle navigation" name="button">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Platform</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cta">Download</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+      <!-- Title -->
+      <div class="row">
+        <div class="col-lg-6">
+          <h1 class="big-heading">I'm a developer. what type of?</h1>
+          <button class=" w-40 btn btn-dark btn-lg down download-button" type="button" ></i> Game developer</button>
+          <a href="https://www.frontendmentor.io/profile/aryansatya" button class="w-40 btn btn-outline-light btn-lg" role="button">Web developer</button></a>
+        </div>
+        <div class="img col-lg-6">
+          <img class="title-image" src="images/iphone11.png" alt="iphone-mockup">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Features -->
+
+  <section class="white-section" id="features">
+    <!-- <div class="container-fluid"> -->
+
+      <div class="row">
+        <div class="col-lg-4">
+          <i class="fea fas fa-heart fa-4x"></i>
+          <h3 class="feature-title">Game Developer</h3>
+          <p class="text-below">Love to make games.</p>
+        </div>
+        <div class="col-lg-4">
+          <i class="fea fas fa-bullseye fa-4x"></i>
+          <h3 class="feature-title">2D and 3D Artist</h3>
+          <p class="text-below">Great at art and design.</p>
+        </div>
+        <div class="col-lg-4">
+          <i class="fea fas fa-check-circle fa-4x"></i>
+          <h3 class="feature-title">Web Developer</h3>
+          <p class="text-below">Front-end Developer.</p>
+        </div>
+      <!-- </div> -->
+  </section>
   </div>
+  </div>
+
+
+  <!-- Testimonials -->
+
+  <section class="colored-section" id="testimonials">
+    <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+      <div class="container carousel-inner">
+        <div class="carousel-item active">
+          <h2 class="testimonial-text">One of my best arts.</h2>
+          <img class="testimonial-image" src="images/paintings.jpg" alt="dog-profile">
+          <!-- <em>using photoshop</em> -->
+        </div>
+        <div class="carousel-item" style="padding-left: 0px;">
+          <h2 class="testimonial-text" style="padding-left: 150px;">Video of my artwork.</h2>
+          <iframe height="720px" width="1280px" class="test-image" src="https://www.youtube.com/embed/MRwUU0aYipE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <!-- <em>Video</em> -->
+        </div>
+      </div>
+      <a class="carousel-control-prev" role="button" href="#testimonial-carousel" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" role="button" href="#testimonial-carousel" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+
+  </section>
+
+
+  <!-- Press -->
+
+  <section class="colored-section" id="press">
+    <img class="press-logo" src="images/youtube.png" alt="tc-logo">
+    <img class="press-logo" src="images/instagram.png" alt="tnw-logo">
+    <img class="press-logo" src="images/steam.png" alt="biz-insider-logo">
+    <img class="press-logo" src="images/unity01.png" alt="mashable-logo">
+
+  </section>
+
+
+  <!-- Pricing -->
+
+  <section class="white-section" id="contact">
+
+    <h2 class="section-heading">My social Media Site</h2>
+    <p>Message me on Instagram, play with me on Steam and watch me on Youtube!</p>
+
+    <div class="row">
+      <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card text-center">
+          <div class="card-header">
+            <h3 class="featured-title">Instagram</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="price-text">Follow?</h2>
+            <p>Let's talk</p>
+            <p>and have fun</p>
+            <p>feel free to message me</p>
+            <a type="button" class="w-100 btn btn-lg btn-outline-dark" href="https://www.instagram.com/aryan_satya/">Follow</a>
+          </div>
+        </div>
+      </div>
+      <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card text-center">
+          <div class="card-header">
+            <h3 class="featured-title">Youtube</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="price-text">Subscribe?</h2>
+            <p>About video games</p>
+            <p>and benchmarks</p>
+            <p>got any doubt, feel free to comment</p>
+            <a type="button" class="w-100 btn btn-lg btn-dark" href="https://www.youtube.com/Aryansatya">Subscribe</a>
+          </div>
+        </div>
+      </div>
+      <div class="pricing-column col-lg-4">
+        <div class="card text-center">
+          <div class="card-header">
+            <h3 class="featured-title">Steam</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="price-text">Friend</h2>
+            <p>Request?</p>
+            <p>Let's play together</p>
+            <p>and have fun!</p>
+            <a type="button" class="w-100 btn btn-lg btn-dark" href="https://steamcommunity.com/profiles/76561198308653334/">Send Request</a>
+          </div>
+        </div>
+      </div>
+
+  </section>
+
+
+  <!-- Call to Action -->
+
+  <section class="colored-section" id="cta">
+
+    <h3 class="big-heading">My projects.</h3>
+    <button class="git w-40 footer btn btn-dark btn-lg" type="button"><i class="fab fa-apple"></i> Download</button>
+    <button class="git w-40 footer btn btn-light btn-lg" type="button"><i class="fab fa-google-play"></i> Download</button>
+    <a href="https://github.com/aryansatya?tab=repositories" class="git w-40 footer btn btn-dark btn-lg" type="button"><i class="fab fa-github"></i> Download</a>
+
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer class="white-section" id="footer">
+    <p><i class="foo fab fa-twitter"></i> <i class="foo fab fa-facebook-f"></i> <i class="foo fab fa-instagram"></i> <i class="foo fas fa-envelope"></i></p>
+    <p>© Copyright 2021 Aryan Satya</p>
+
+  </footer>
+
 </body>
+
 </html>
